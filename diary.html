@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>쉼의 다이어리 | 여행둥이지</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;family=Gowun+Batang:wght@400;700&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="site.js"></script>
+<style>
+  html,body{margin:0;padding:0}
+  .gowun{font-family:'Gowun Batang',serif}
+  .pen{font-family:'Nanum Pen Script',cursive}
+  details>summary{list-style:none;cursor:pointer}
+  details>summary::-webkit-details-marker{display:none}
+  details[open] .chev{transform:rotate(180deg)}
+</style>
+</head>
+<body data-page="diary" class="bg-surface font-body-md text-body-md text-on-surface antialiased">
+
+<!-- ===== 상단 헤더 (4개 페이지 공통) ===== -->
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(62,58,54,0.05)]">
+  <div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
+    <a href="index.html" class="flex items-center gap-space-md">
+      <div class="w-9 h-9 rounded-full bg-[#8FA88A]/20 flex items-center justify-center text-[#4d644a] border border-[#8FA88A]/30"><span class="material-symbols-outlined text-[20px]">cruelty_free</span></div>
+      <div class="flex flex-col"><span class="gowun text-headline-sm font-bold text-on-surface tracking-tight">여행둥이지</span><span class="text-[12px] text-on-surface-variant hidden sm:inline-block">아이와 여행 · 엄마표 만들기 · 쉼의 다이어리</span></div>
+    </a>
+    <nav class="hidden md:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-space-xs rounded-full">
+      <a data-nav="travel" href="travel.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">아이와 여행</a>
+      <a data-nav="craft" href="craft.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">엄마표 만들기</a>
+      <a data-nav="diary" href="diary.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">쉼의 다이어리</a>
+    </nav>
+    <div class="flex items-center gap-space-sm">
+      <a href="index.html#kit" class="hidden sm:inline-flex items-center font-label-md text-label-md bg-[#D9825B] text-white px-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(217,130,91,0.35)] hover:bg-[#c8734c] transition-all">무료 도안·코스 받기</a>
+      <button id="menu-btn" aria-label="메뉴 열기" aria-expanded="false" class="md:hidden flex items-center justify-center p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container" type="button"><span class="material-symbols-outlined">menu</span></button>
+    </div>
+  </div>
+  <nav id="mobile-nav" class="hidden md:hidden flex flex-col gap-1 px-margin pb-4">
+    <a data-nav="travel" href="travel.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">아이와 여행</a>
+    <a data-nav="craft" href="craft.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">엄마표 만들기</a>
+    <a data-nav="diary" href="diary.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">쉼의 다이어리</a>
+    <a href="index.html#kit" class="mt-2 px-space-md py-3 rounded-xl bg-[#D9825B] text-white text-center font-semibold">무료 도안·코스 받기</a>
+  </nav>
+</header>
+
+<main class="pt-20 bg-[#fbf6f0]">
+  <!-- ===== 페이지 소개 ===== -->
+  <section class="max-w-2xl mx-auto px-margin pt-16 pb-10 text-center">
+    <span class="material-symbols-outlined text-[#8FA88A] text-[30px]">local_cafe</span>
+    <h1 class="gowun text-[32px] md:text-headline-xl font-bold mt-2">쉼의 다이어리</h1>
+    <p class="pen text-[24px] text-[#4d644a] mt-2">엄마이기 전에, 나에게 쓰는 글</p>
+  </section>
+
+  <!-- ===== 글 목록 (글을 추가하면 자동으로 채워져요) ===== -->
+  <section class="max-w-2xl mx-auto px-margin mb-16">
+    <div class="bg-white/70 rounded-[20px] border-2 border-dashed border-[#8FA88A]/40 p-6 md:p-8">
+      <p class="text-label-sm font-label-sm text-[#D9825B] tracking-widest mb-3">목차</p>
+      <ol id="essay-index" class="scroll-mt-28 divide-y divide-dashed divide-stone-300"></ol>
+    </div>
+  </section>
+
+  <div class="max-w-2xl mx-auto px-margin pb-24 flex flex-col gap-20">
+
+    <!-- ▼▼▼ 에세이 1편 시작 — 새 글은 이 덩어리를 복사해서 "맨 위"에 붙여 넣고, id 를 바꿔 주세요 (essay-01 → essay-02) ▼▼▼ -->
+    <article id="essay-01" data-date="2026.11.17" class="scroll-mt-28">
+      <p class="text-label-sm font-label-sm text-on-surface-variant tracking-widest">2026.11.17</p>
+      <h2 class="gowun text-[26px] md:text-[30px] font-bold leading-snug mt-2">(예시) 식은 커피를 다시 데우며</h2>
+      <!-- 사진을 넣고 싶을 때만 아래 줄을 남겨 두세요 -->
+      <img src="images/essay-01.jpg" alt="" class="mt-6 rounded-[20px] w-full" onerror="this.remove()"/>
+      <div class="gowun text-[17px] leading-[2] text-[#3E3A36] mt-6 space-y-5">
+        <p>여기에 에세이 본문을 적어 주세요. 문단마다 &lt;p&gt; … &lt;/p&gt; 로 감싸면 돼요.</p>
+        <p>글씨는 읽기 편하도록 넉넉한 줄 간격의 바탕체로 보여요.</p>
+        <p>짧아도, 길어도 괜찮아요. 오늘의 나에게 남기고 싶은 문장이면 충분해요.</p>
+      </div>
+      <!-- 마지막 손글씨 한 줄 (없어도 돼요) -->
+      <p class="pen text-[24px] text-[#4d644a] mt-8">— 오늘도 수고했어, 나.</p>
+      <div class="mt-10 flex items-center justify-between text-body-sm text-on-surface-variant">
+        <span class="flex-1 border-t-2 border-dashed border-[#8FA88A]/40"></span>
+        <a href="#essay-index" class="ml-4 inline-flex items-center gap-1 hover:text-on-surface"><span class="material-symbols-outlined text-[18px]">arrow_upward</span>목차로</a>
+      </div>
+    </article>
+    <!-- ▲▲▲ 에세이 1편 끝 ▲▲▲ -->
+
+  </div>
+</main>
+</main>
+
+<!-- ===== 하단 (4개 페이지 공통) ===== -->
+<footer class="w-full bg-surface-container-low">
+  <div class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
+    <div><span class="gowun text-headline-sm text-[#4d644a] font-bold">여행둥이지</span><p class="text-body-sm text-on-surface-variant max-w-md mt-1">천천히 걷고, 손으로 짓고, 깊이 쉬어가는 시간. 아이와 엄마가 함께 자라는 따뜻한 여정을 기록합니다.</p></div>
+    <div class="flex flex-wrap items-center gap-space-lg text-body-sm text-on-surface-variant">
+      <a href="travel.html" class="hover:text-on-surface">아이와 여행</a><a href="craft.html" class="hover:text-on-surface">엄마표 만들기</a><a href="diary.html" class="hover:text-on-surface">쉼의 다이어리</a><span class="text-tertiary">© 2026 여행둥이지</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // 목차: 아래 에세이(article)들을 읽어서 자동으로 만들어요
+  (function () {
+    var list = document.getElementById('essay-index');
+    document.querySelectorAll('article[id^="essay-"]').forEach(function (a) {
+      var li = document.createElement('li');
+      li.innerHTML = '<a class="flex items-baseline justify-between gap-4 py-3 hover:text-[#4d644a]"><span class="gowun font-bold"></span><span class="text-body-sm text-on-surface-variant shrink-0"></span></a>';
+      li.querySelector('a').href = '#' + a.id;
+      li.querySelector('.gowun').textContent = a.querySelector('h2').textContent;
+      li.querySelectorAll('span')[1].textContent = a.dataset.date || '';
+      list.appendChild(li);
+    });
+  })();
+</script>
+</body>
+</html>
