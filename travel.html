@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>아이와 여행 | 여행둥이지</title>
+<title>아이와 여행 | 한량워킹맘</title>
+<link rel="icon" href="images/logo/favicon.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;family=Gowun+Batang:wght@400;700&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -20,19 +21,16 @@
 <body data-page="travel" class="bg-surface font-body-md text-body-md text-on-surface antialiased">
 
 <!-- ===== 상단 헤더 (4개 페이지 공통) ===== -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(62,58,54,0.05)]">
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(59,53,65,0.05)]">
   <div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-space-md">
-      <div class="w-9 h-9 rounded-full bg-[#8FA88A]/20 flex items-center justify-center text-[#4d644a] border border-[#8FA88A]/30"><span class="material-symbols-outlined text-[20px]">cruelty_free</span></div>
-      <div class="flex flex-col"><span class="gowun text-headline-sm font-bold text-on-surface tracking-tight">여행둥이지</span><span class="text-[12px] text-on-surface-variant hidden sm:inline-block">아이와 여행 · 엄마표 만들기 · 쉼의 다이어리</span></div>
-    </a>
+    <a href="index.html" class="flex items-center shrink-0" aria-label="한량워킹맘 홈"><img src="images/logo/logo-header.png" alt="한량워킹맘" class="h-11 md:h-14 w-auto"/></a>
     <nav class="hidden md:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-space-xs rounded-full">
       <a data-nav="travel" href="travel.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">아이와 여행</a>
       <a data-nav="craft" href="craft.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">엄마표 만들기</a>
       <a data-nav="diary" href="diary.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">쉼의 다이어리</a>
     </nav>
     <div class="flex items-center gap-space-sm">
-      <a href="index.html#kit" class="hidden sm:inline-flex items-center font-label-md text-label-md bg-[#D9825B] text-white px-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(217,130,91,0.35)] hover:bg-[#c8734c] transition-all">무료 도안·코스 받기</a>
+      <a href="index.html#kit" class="hidden sm:inline-flex items-center font-label-md text-label-md bg-[#8565B0] text-white px-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(133,101,176,0.35)] hover:bg-[#6F519A] transition-all">무료 도안·코스 받기</a>
       <button id="menu-btn" aria-label="메뉴 열기" aria-expanded="false" class="md:hidden flex items-center justify-center p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container" type="button"><span class="material-symbols-outlined">menu</span></button>
     </div>
   </div>
@@ -40,16 +38,16 @@
     <a data-nav="travel" href="travel.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">아이와 여행</a>
     <a data-nav="craft" href="craft.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">엄마표 만들기</a>
     <a data-nav="diary" href="diary.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">쉼의 다이어리</a>
-    <a href="index.html#kit" class="mt-2 px-space-md py-3 rounded-xl bg-[#D9825B] text-white text-center font-semibold">무료 도안·코스 받기</a>
+    <a href="index.html#kit" class="mt-2 px-space-md py-3 rounded-xl bg-[#8565B0] text-white text-center font-semibold">무료 도안·코스 받기</a>
   </nav>
 </header>
 
 <main class="pt-20">
   <!-- ===== 페이지 소개 ===== -->
   <section class="max-w-5xl mx-auto px-margin md:px-margin-tablet pt-14 pb-10 text-center">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#8FA88A]/20 border border-[#8FA88A]/30 mb-5">
-      <span class="material-symbols-outlined text-[#4d644a] text-[18px]">map</span>
-      <span class="pen text-[#4d644a] text-[20px] leading-none">느린 걸음으로 다녀온 곳들</span>
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#79C1B5]/20 border border-[#79C1B5]/30 mb-5">
+      <span class="material-symbols-outlined text-[#2E7D6E] text-[18px]">map</span>
+      <span class="pen text-[#2E7D6E] text-[20px] leading-none">느린 걸음으로 다녀온 곳들</span>
     </div>
     <h1 class="gowun text-[30px] md:text-headline-xl font-bold leading-[1.35]">아이와 진짜 다녀온 여행 기록</h1>
     <p class="text-body-lg text-on-surface-variant mt-4 max-w-xl mx-auto">수유실·유모차 길·낮잠 타이밍까지, 직접 걸어보고 남긴 코스예요.</p>
@@ -66,37 +64,37 @@
   <section class="max-w-4xl mx-auto px-margin md:px-margin-tablet pb-24 flex flex-col gap-8" id="posts">
 
     <!-- ▼▼▼ 여행 글 1개 시작 — 이 <article> 덩어리를 통째로 복사해서 새 글을 추가하세요 ▼▼▼ -->
-    <article data-tag="당일치기" class="bg-surface-container-lowest rounded-[20px] border border-stone-200/60 shadow-[0_12px_32px_rgba(62,58,54,0.05)] overflow-hidden">
+    <article data-tag="당일치기" class="bg-surface-container-lowest rounded-[20px] border border-zinc-200/60 shadow-[0_12px_32px_rgba(59,53,65,0.05)] overflow-hidden">
       <div class="grid md:grid-cols-5">
-        <div class="md:col-span-2 relative aspect-[4/3] md:aspect-auto bg-[#F1E8DA] flex items-center justify-center">
-          <span class="material-symbols-outlined text-[40px] text-[#8FA88A]">photo_camera</span>
+        <div class="md:col-span-2 relative aspect-[4/3] md:aspect-auto bg-[#EAF5F2] flex items-center justify-center">
+          <span class="material-symbols-outlined text-[40px] text-[#79C1B5]">photo_camera</span>
           <!-- 사진: images 폴더에 넣고 파일 이름만 바꾸세요 -->
           <img src="images/hero.jpg" alt="숲길 산책로를 달려가는 아이들" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"/>
         </div>
         <div class="md:col-span-3 p-6 md:p-8">
           <div class="flex flex-wrap items-center gap-2 text-label-sm font-label-sm">
-            <span class="px-3 py-1 rounded-full bg-[#8FA88A]/20 text-[#4d644a]">당일치기</span>
+            <span class="px-3 py-1 rounded-full bg-[#79C1B5]/20 text-[#2E7D6E]">당일치기</span>
             <span class="text-on-surface-variant">2026.11.15</span>
           </div>
           <h2 class="gowun text-headline-md font-bold mt-3">(예시) 동네 숲길 반나절 산책 코스</h2>
           <p class="text-body-sm text-on-surface-variant mt-1">📍 경기 광명 · 👶 3~7세 · ⏱ 약 3시간</p>
           <p class="text-on-surface-variant mt-4 leading-relaxed">여기에 이 여행을 한두 줄로 소개해 주세요. 목록에서 가장 먼저 보이는 문장이에요.</p>
           <ul class="flex flex-wrap gap-2 mt-4 text-label-sm font-label-sm">
-            <li class="px-3 py-1 rounded-full border border-stone-300 text-on-surface-variant">🍼 수유실 있음</li>
-            <li class="px-3 py-1 rounded-full border border-stone-300 text-on-surface-variant">🛒 유모차 OK</li>
-            <li class="px-3 py-1 rounded-full border border-stone-300 text-on-surface-variant">🅿️ 무료 주차</li>
+            <li class="px-3 py-1 rounded-full border border-zinc-300 text-on-surface-variant">🍼 수유실 있음</li>
+            <li class="px-3 py-1 rounded-full border border-zinc-300 text-on-surface-variant">🛒 유모차 OK</li>
+            <li class="px-3 py-1 rounded-full border border-zinc-300 text-on-surface-variant">🅿️ 무료 주차</li>
           </ul>
-          <details class="mt-6 border-t border-dashed border-stone-300 pt-4">
-            <summary class="flex items-center gap-1 text-[#D9825B] font-semibold">여행 기록 펼쳐보기 <span class="chev material-symbols-outlined text-[20px] transition-transform">expand_more</span></summary>
+          <details class="mt-6 border-t border-dashed border-zinc-300 pt-4">
+            <summary class="flex items-center gap-1 text-[#8565B0] font-semibold">여행 기록 펼쳐보기 <span class="chev material-symbols-outlined text-[20px] transition-transform">expand_more</span></summary>
             <div class="mt-5 space-y-5">
-              <ol class="relative border-l-2 border-dashed border-[#8FA88A]/50 ml-2 space-y-4">
-                <li class="pl-5"><b class="text-[#4d644a]">10:00</b> 출발 — 어디서 어떻게 갔는지</li>
-                <li class="pl-5"><b class="text-[#4d644a]">11:00</b> 첫 번째 장소 — 아이 반응, 머문 시간</li>
-                <li class="pl-5"><b class="text-[#4d644a]">12:30</b> 점심 — 아기 의자·키즈메뉴 여부</li>
-                <li class="pl-5"><b class="text-[#4d644a]">14:00</b> 마무리 — 낮잠 타이밍</li>
+              <ol class="relative border-l-2 border-dashed border-[#79C1B5]/50 ml-2 space-y-4">
+                <li class="pl-5"><b class="text-[#2E7D6E]">10:00</b> 출발 — 어디서 어떻게 갔는지</li>
+                <li class="pl-5"><b class="text-[#2E7D6E]">11:00</b> 첫 번째 장소 — 아이 반응, 머문 시간</li>
+                <li class="pl-5"><b class="text-[#2E7D6E]">12:30</b> 점심 — 아기 의자·키즈메뉴 여부</li>
+                <li class="pl-5"><b class="text-[#2E7D6E]">14:00</b> 마무리 — 낮잠 타이밍</li>
               </ol>
-              <div class="bg-[#F1E8DA]/70 rounded-xl p-5">
-                <p class="pen text-[22px] text-[#4d644a] leading-none mb-2">엄마의 꿀팁</p>
+              <div class="bg-[#EAF5F2]/70 rounded-xl p-5">
+                <p class="pen text-[22px] text-[#2E7D6E] leading-none mb-2">엄마의 꿀팁</p>
                 <p class="text-on-surface-variant">가기 전에 알았으면 좋았을 것, 챙겨가면 좋은 준비물을 적어 주세요.</p>
               </div>
             </div>
@@ -107,22 +105,22 @@
     <!-- ▲▲▲ 여행 글 1개 끝 ▲▲▲ -->
 
     <!-- ▼▼▼ 여행 글 1개 시작 ▼▼▼ -->
-    <article data-tag="실내" class="bg-surface-container-lowest rounded-[20px] border border-stone-200/60 shadow-[0_12px_32px_rgba(62,58,54,0.05)] overflow-hidden">
+    <article data-tag="실내" class="bg-surface-container-lowest rounded-[20px] border border-zinc-200/60 shadow-[0_12px_32px_rgba(59,53,65,0.05)] overflow-hidden">
       <div class="grid md:grid-cols-5">
-        <div class="md:col-span-2 relative aspect-[4/3] md:aspect-auto md:min-h-[220px] bg-[#F1E8DA] flex items-center justify-center">
-          <span class="material-symbols-outlined text-[40px] text-[#8FA88A]">photo_camera</span>
+        <div class="md:col-span-2 relative aspect-[4/3] md:aspect-auto md:min-h-[220px] bg-[#EAF5F2] flex items-center justify-center">
+          <span class="material-symbols-outlined text-[40px] text-[#79C1B5]">photo_camera</span>
           <img src="images/travel-02.jpg" alt="" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"/>
         </div>
         <div class="md:col-span-3 p-6 md:p-8">
           <div class="flex flex-wrap items-center gap-2 text-label-sm font-label-sm">
-            <span class="px-3 py-1 rounded-full bg-[#D9825B]/15 text-[#934a28]">실내</span>
+            <span class="px-3 py-1 rounded-full bg-[#8565B0]/15 text-[#6A4C93]">실내</span>
             <span class="text-on-surface-variant">2026.11.08</span>
           </div>
           <h2 class="gowun text-headline-md font-bold mt-3">(예시) 비 오는 날 실내 나들이</h2>
           <p class="text-body-sm text-on-surface-variant mt-1">📍 지역 · 👶 추천 나이 · ⏱ 소요 시간</p>
           <p class="text-on-surface-variant mt-4 leading-relaxed">사진이 아직 없으면 이렇게 카메라 아이콘이 대신 보여요.</p>
-          <details class="mt-6 border-t border-dashed border-stone-300 pt-4">
-            <summary class="flex items-center gap-1 text-[#D9825B] font-semibold">여행 기록 펼쳐보기 <span class="chev material-symbols-outlined text-[20px] transition-transform">expand_more</span></summary>
+          <details class="mt-6 border-t border-dashed border-zinc-300 pt-4">
+            <summary class="flex items-center gap-1 text-[#8565B0] font-semibold">여행 기록 펼쳐보기 <span class="chev material-symbols-outlined text-[20px] transition-transform">expand_more</span></summary>
             <div class="mt-5 space-y-4 text-on-surface-variant leading-relaxed">
               <p>코스 순서 없이 자유롭게 글로만 적어도 괜찮아요.</p>
             </div>
@@ -138,17 +136,17 @@
 <!-- ===== 하단 (4개 페이지 공통) ===== -->
 <footer class="w-full bg-surface-container-low">
   <div class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
-    <div><span class="gowun text-headline-sm text-[#4d644a] font-bold">여행둥이지</span><p class="text-body-sm text-on-surface-variant max-w-md mt-1">천천히 걷고, 손으로 짓고, 깊이 쉬어가는 시간. 아이와 엄마가 함께 자라는 따뜻한 여정을 기록합니다.</p></div>
+    <div><img src="images/logo/logo-header.png" alt="한량워킹맘" class="h-14 w-auto mb-1"/><p class="text-body-sm text-on-surface-variant max-w-md mt-1">천천히 걷고, 손으로 짓고, 깊이 쉬어가는 시간. 아이와 엄마가 함께 자라는 따뜻한 여정을 기록합니다.</p></div>
     <div class="flex flex-wrap items-center gap-space-lg text-body-sm text-on-surface-variant">
-      <a href="travel.html" class="hover:text-on-surface">아이와 여행</a><a href="craft.html" class="hover:text-on-surface">엄마표 만들기</a><a href="diary.html" class="hover:text-on-surface">쉼의 다이어리</a><span class="text-tertiary">© 2026 여행둥이지</span>
+      <a href="travel.html" class="hover:text-on-surface">아이와 여행</a><a href="craft.html" class="hover:text-on-surface">엄마표 만들기</a><a href="diary.html" class="hover:text-on-surface">쉼의 다이어리</a><span class="text-tertiary">© 2026 한량워킹맘</span>
     </div>
   </div>
 </footer>
 
 <style>
-  .chip{padding:.45rem 1.1rem;border-radius:9999px;border:1px solid #c3c8be;color:#434841;font-size:14px;font-weight:600;transition:all .2s}
-  .chip:hover{background:#efe7e1}
-  .chip.on{background:#4d644a;border-color:#4d644a;color:#fff}
+  .chip{padding:.45rem 1.1rem;border-radius:9999px;border:1px solid #CFCAD8;color:#4A4552;font-size:14px;font-weight:600;transition:all .2s}
+  .chip:hover{background:#EAE6F0}
+  .chip.on{background:#2E7D6E;border-color:#2E7D6E;color:#fff}
 </style>
 <script>
   // 분류 버튼: 누르면 같은 data-tag 를 가진 글만 보여요

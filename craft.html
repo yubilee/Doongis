@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>엄마표 만들기 | 여행둥이지</title>
+<title>엄마표 만들기 | 한량워킹맘</title>
+<link rel="icon" href="images/logo/favicon.png"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100..900&amp;family=Plus+Jakarta+Sans:wght@100..900&amp;family=Gowun+Batang:wght@400;700&amp;family=Nanum+Pen+Script&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
@@ -20,19 +21,16 @@
 <body data-page="craft" class="bg-surface font-body-md text-body-md text-on-surface antialiased">
 
 <!-- ===== 상단 헤더 (4개 페이지 공통) ===== -->
-<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(62,58,54,0.05)]">
+<header class="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md shadow-[0_1px_8px_rgba(59,53,65,0.05)]">
   <div class="h-20 w-full px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between">
-    <a href="index.html" class="flex items-center gap-space-md">
-      <div class="w-9 h-9 rounded-full bg-[#8FA88A]/20 flex items-center justify-center text-[#4d644a] border border-[#8FA88A]/30"><span class="material-symbols-outlined text-[20px]">cruelty_free</span></div>
-      <div class="flex flex-col"><span class="gowun text-headline-sm font-bold text-on-surface tracking-tight">여행둥이지</span><span class="text-[12px] text-on-surface-variant hidden sm:inline-block">아이와 여행 · 엄마표 만들기 · 쉼의 다이어리</span></div>
-    </a>
+    <a href="index.html" class="flex items-center shrink-0" aria-label="한량워킹맘 홈"><img src="images/logo/logo-header.png" alt="한량워킹맘" class="h-11 md:h-14 w-auto"/></a>
     <nav class="hidden md:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-space-xs rounded-full">
       <a data-nav="travel" href="travel.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">아이와 여행</a>
       <a data-nav="craft" href="craft.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">엄마표 만들기</a>
       <a data-nav="diary" href="diary.html" class="font-label-md text-label-md px-space-md py-space-xs rounded-full text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors">쉼의 다이어리</a>
     </nav>
     <div class="flex items-center gap-space-sm">
-      <a href="index.html#kit" class="hidden sm:inline-flex items-center font-label-md text-label-md bg-[#D9825B] text-white px-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(217,130,91,0.35)] hover:bg-[#c8734c] transition-all">무료 도안·코스 받기</a>
+      <a href="index.html#kit" class="hidden sm:inline-flex items-center font-label-md text-label-md bg-[#8565B0] text-white px-space-lg py-space-sm rounded-full shadow-[0_8px_20px_-4px_rgba(133,101,176,0.35)] hover:bg-[#6F519A] transition-all">무료 도안·코스 받기</a>
       <button id="menu-btn" aria-label="메뉴 열기" aria-expanded="false" class="md:hidden flex items-center justify-center p-space-sm rounded-full text-on-surface-variant hover:bg-surface-container" type="button"><span class="material-symbols-outlined">menu</span></button>
     </div>
   </div>
@@ -40,16 +38,16 @@
     <a data-nav="travel" href="travel.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">아이와 여행</a>
     <a data-nav="craft" href="craft.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">엄마표 만들기</a>
     <a data-nav="diary" href="diary.html" class="px-space-md py-3 rounded-xl text-on-surface-variant">쉼의 다이어리</a>
-    <a href="index.html#kit" class="mt-2 px-space-md py-3 rounded-xl bg-[#D9825B] text-white text-center font-semibold">무료 도안·코스 받기</a>
+    <a href="index.html#kit" class="mt-2 px-space-md py-3 rounded-xl bg-[#8565B0] text-white text-center font-semibold">무료 도안·코스 받기</a>
   </nav>
 </header>
 
 <main class="pt-20">
   <!-- ===== 페이지 소개 ===== -->
   <section class="max-w-5xl mx-auto px-margin md:px-margin-tablet pt-14 pb-12 text-center">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#D9825B]/15 border border-[#D9825B]/30 mb-5">
-      <span class="material-symbols-outlined text-[#D9825B] text-[18px]">content_cut</span>
-      <span class="pen text-[#934a28] text-[20px] leading-none">서툴러도 괜찮아요</span>
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#8565B0]/15 border border-[#8565B0]/30 mb-5">
+      <span class="material-symbols-outlined text-[#8565B0] text-[18px]">content_cut</span>
+      <span class="pen text-[#6A4C93] text-[20px] leading-none">서툴러도 괜찮아요</span>
     </div>
     <h1 class="gowun text-[30px] md:text-headline-xl font-bold leading-[1.35]">도안 받고, 한 단계씩 따라 만들기</h1>
     <p class="text-body-lg text-on-surface-variant mt-4 max-w-xl mx-auto">도안을 내려받아 출력하고, 사진을 보며 차근차근 따라 해 보세요.</p>
@@ -61,81 +59,123 @@
   <section class="max-w-4xl mx-auto px-margin md:px-margin-tablet pb-24 flex flex-col gap-14">
 
     <!-- ▼▼▼ 만들기 1개 시작 — 이 <article> 덩어리를 통째로 복사하고 id 를 바꿔 주세요 (craft-01 → craft-02) ▼▼▼ -->
-    <article id="craft-01" data-title="(예시) 손바느질 턱받이" class="scroll-mt-28 bg-surface-container-lowest rounded-[20px] border border-stone-200/60 shadow-[0_12px_32px_rgba(62,58,54,0.05)] overflow-hidden">
+    <article id="craft-01" data-title="광복절 태극기 색칠 도안" class="scroll-mt-28 bg-surface-container-lowest rounded-[20px] border border-zinc-200/60 shadow-[0_12px_32px_rgba(59,53,65,0.05)] overflow-hidden">
       <!-- 윗부분: 완성 사진 + 기본 정보 -->
       <div class="grid md:grid-cols-2">
-        <div class="relative aspect-square bg-[#F1E8DA] flex items-center justify-center">
-          <span class="material-symbols-outlined text-[44px] text-[#D9825B]/60">checkroom</span>
-          <img src="images/craft-01.jpg" alt="완성된 턱받이" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"/>
+        <div class="relative aspect-square bg-[#EAF5F2] flex items-center justify-center">
+          <span class="material-symbols-outlined text-[44px] text-[#8565B0]/60">palette</span>
+          <img src="images/thumb-craft-taegukgi.jpg" alt="엄마표 만들기 — 광복절 태극기 색칠 도안" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()"/>
         </div>
         <div class="p-6 md:p-8 flex flex-col">
-          <span class="self-start px-3 py-1 rounded-full bg-[#D9825B]/15 text-[#934a28] text-label-sm font-label-sm">바느질</span>
-          <h2 class="gowun text-headline-md md:text-[26px] font-bold mt-3">(예시) 손바느질 턱받이</h2>
-          <p class="text-on-surface-variant mt-3 leading-relaxed">어떤 작품인지, 왜 만들게 됐는지 짧게 소개해 주세요.</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-[#8565B0]/15 text-[#6A4C93] text-label-sm font-label-sm">색칠놀이</span>
+            <span class="px-3 py-1 rounded-full bg-[#79C1B5]/20 text-[#2E7D6E] text-label-sm font-label-sm">8월 · 광복절</span>
+          </div>
+          <h2 class="gowun text-headline-md md:text-[26px] font-bold mt-3">광복절 태극기 색칠 도안</h2>
+          <p class="text-on-surface-variant mt-3 leading-relaxed">8월 15일 광복절을 맞아 아이와 함께 태극기를 색칠하며 건곤감리의 의미를 이야기해 봐요. 놀이도 하고, 우리 역사도 자연스럽게 알려줄 수 있어요.</p>
           <dl class="grid grid-cols-3 gap-2 mt-6 text-center">
-            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">난이도</dt><dd class="text-[#D9825B] mt-1">★☆☆</dd></div>
-            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">걸리는 시간</dt><dd class="mt-1 font-semibold">1시간</dd></div>
-            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">추천 나이</dt><dd class="mt-1 font-semibold">0~2세</dd></div>
+            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">난이도</dt><dd class="text-[#8565B0] mt-1">★☆☆</dd></div>
+            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">도안</dt><dd class="mt-1 font-semibold">2종</dd></div>
+            <div class="bg-surface-container-low rounded-xl py-3"><dt class="text-label-sm text-on-surface-variant">추천 나이</dt><dd class="mt-1 font-semibold">24개월~</dd></div>
           </dl>
-          <!-- 도안 파일: patterns 폴더에 PDF 를 넣고 파일 이름을 맞춰 주세요 -->
-          <a href="patterns/craft-01.pdf" download class="mt-6 inline-flex items-center justify-center gap-2 bg-[#4d644a] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#3f553c] transition-colors">
-            <span class="material-symbols-outlined text-[20px]">download</span> 도안 내려받기 (PDF)
+          <!-- 도안 파일: patterns 폴더 -->
+          <a href="patterns/taegukgi-coloring.pdf" download="태극기_색칠도안_한량워킹맘.pdf" class="mt-6 inline-flex items-center justify-center gap-2 bg-[#2E7D6E] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#24685B] transition-colors">
+            <span class="material-symbols-outlined text-[20px]">download</span> 도안 내려받기 (PDF · 2장)
           </a>
-          <p class="text-body-sm text-on-surface-variant mt-2 text-center">A4 용지에 <b>실제 크기(100%)</b>로 출력해 주세요</p>
+          <div class="grid grid-cols-2 gap-2 mt-2">
+            <a href="patterns/taegukgi-coloring.png" download="태극기_색칠도안_기본.png" class="inline-flex items-center justify-center gap-1 px-3 py-2.5 rounded-full border border-[#79C1B5]/50 text-[#2E7D6E] text-body-sm font-semibold hover:bg-[#79C1B5]/10"><span class="material-symbols-outlined text-[18px]">image</span>기본 (PNG)</a>
+            <a href="patterns/taegukgi-coloring-guide.png" download="태극기_색칠도안_색견본.png" class="inline-flex items-center justify-center gap-1 px-3 py-2.5 rounded-full border border-[#79C1B5]/50 text-[#2E7D6E] text-body-sm font-semibold hover:bg-[#79C1B5]/10"><span class="material-symbols-outlined text-[18px]">image</span>색 견본 (PNG)</a>
+          </div>
+          <p class="text-body-sm text-on-surface-variant mt-3 text-center">A4 용지에 <b>가로 방향</b>으로 출력해 주세요</p>
         </div>
       </div>
 
-      <div class="p-6 md:p-10 border-t border-dashed border-stone-300 grid md:grid-cols-3 gap-10">
+      <!-- 도안 미리보기 -->
+      <div class="px-6 md:px-10 pt-8 md:pt-10 border-t border-dashed border-zinc-300">
+        <h3 class="gowun text-headline-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#79C1B5]">description</span>도안 미리보기</h3>
+        <div class="grid sm:grid-cols-2 gap-4 mt-4">
+          <figure>
+            <img src="patterns/taegukgi-coloring.png" alt="태극기 색칠 도안 — 기본" class="w-full rounded-xl border border-zinc-200 bg-white"/>
+            <figcaption class="text-body-sm text-on-surface-variant mt-2 text-center">① 기본 — 선만 있는 도안</figcaption>
+          </figure>
+          <figure>
+            <img src="patterns/taegukgi-coloring-guide.png" alt="태극기 색칠 도안 — 왼쪽 위에 색 견본" class="w-full rounded-xl border border-zinc-200 bg-white"/>
+            <figcaption class="text-body-sm text-on-surface-variant mt-2 text-center">② 색 견본 — 왼쪽 위 태극기를 보고 따라 칠해요</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="p-6 md:p-10 grid md:grid-cols-3 gap-10">
         <!-- 준비물 -->
         <div>
-          <h3 class="gowun text-headline-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#8FA88A]">inventory_2</span>준비물</h3>
+          <h3 class="gowun text-headline-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#79C1B5]">inventory_2</span>준비물</h3>
           <ul class="mt-4 space-y-2 text-on-surface-variant">
-            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#8FA88A]"/> 겉감 원단</li>
-            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#8FA88A]"/> 안감(거즈 등)</li>
-            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#8FA88A]"/> 똑딱단추</li>
-            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#8FA88A]"/> 실, 바늘, 가위, 시침핀</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#79C1B5]"/> 출력한 태극기 도안 (A4)</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#79C1B5]"/> 색연필이나 크레파스</li>
+            <li class="flex gap-2"><input type="checkbox" class="mt-1.5 accent-[#79C1B5]"/> 꼭 필요한 색: 빨강 · 파랑 · 검정</li>
           </ul>
+
+          <!-- 아이와 나눌 이야기 -->
+          <div class="mt-8 rounded-xl border-2 border-dashed border-[#79C1B5]/40 p-5">
+            <p class="gowun font-bold text-[#2E7D6E]">아이와 나눌 이야기</p>
+            <img src="images/craft-taegukgi.jpg" alt="태극기" class="mt-3 rounded-lg w-full border border-zinc-200" onerror="this.remove()"/>
+            <dl class="mt-4 space-y-3 text-body-sm text-on-surface-variant">
+              <div><dt class="font-semibold text-on-surface">광복절이란?</dt><dd>1945년 8월 15일, 일본의 지배에서 벗어나 우리나라가 다시 주권을 되찾은 날이에요.</dd></div>
+              <div><dt class="font-semibold text-on-surface">하얀 바탕</dt><dd>우리 민족의 순수함과 평화</dd></div>
+              <div><dt class="font-semibold text-on-surface">태극 문양</dt><dd>우주의 조화 — 빨강은 양(陽), 파랑은 음(陰)</dd></div>
+              <div><dt class="font-semibold text-on-surface">건곤감리</dt><dd>건 ☰ 하늘 · 곤 ☷ 땅 · 감 ☵ 물 · 리 ☲ 불</dd></div>
+            </dl>
+          </div>
         </div>
 
         <!-- 만드는 방법 -->
         <div class="md:col-span-2">
-          <h3 class="gowun text-headline-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#D9825B]">format_list_numbered</span>만드는 방법</h3>
+          <h3 class="gowun text-headline-sm font-bold flex items-center gap-2"><span class="material-symbols-outlined text-[#8565B0]">format_list_numbered</span>만드는 방법</h3>
           <ol class="mt-5 space-y-6">
-            <!-- 단계 1개 = <li> 1개. 사진이 없으면 <img> 줄을 지워도 돼요 -->
             <li class="flex gap-4">
-              <span class="shrink-0 w-9 h-9 rounded-full bg-[#8FA88A] text-white flex items-center justify-center font-bold">1</span>
+              <span class="shrink-0 w-9 h-9 rounded-full bg-[#79C1B5] text-white flex items-center justify-center font-bold">1</span>
               <div class="flex-1">
-                <p class="font-semibold">도안 오리기</p>
-                <p class="text-on-surface-variant mt-1">출력한 도안을 선을 따라 오려 주세요.</p>
-                <img src="images/craft-01-step1.jpg" alt="" class="mt-3 rounded-xl w-full max-w-sm" onerror="this.remove()"/>
+                <p class="font-semibold">도안 내려받아 출력하기</p>
+                <p class="text-on-surface-variant mt-1">위의 버튼으로 도안을 내려받아 A4 가로로 출력해요. 처음이라면 왼쪽 위에 작은 태극기가 있는 <b>② 색 견본</b> 도안이 따라 칠하기 쉬워요.</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <span class="shrink-0 w-9 h-9 rounded-full bg-[#8FA88A] text-white flex items-center justify-center font-bold">2</span>
+              <span class="shrink-0 w-9 h-9 rounded-full bg-[#79C1B5] text-white flex items-center justify-center font-bold">2</span>
               <div class="flex-1">
-                <p class="font-semibold">원단 재단하기</p>
-                <p class="text-on-surface-variant mt-1">이 단계에서 하는 일을 적어 주세요.</p>
+                <p class="font-semibold">태극기 이야기 나누기</p>
+                <p class="text-on-surface-variant mt-1">색칠하기 전에 광복절이 어떤 날인지, 태극기의 하얀 바탕과 태극 문양, 네 모서리 괘가 무엇을 뜻하는지 아이 눈높이로 들려줘요.</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <span class="shrink-0 w-9 h-9 rounded-full bg-[#8FA88A] text-white flex items-center justify-center font-bold">3</span>
+              <span class="shrink-0 w-9 h-9 rounded-full bg-[#79C1B5] text-white flex items-center justify-center font-bold">3</span>
               <div class="flex-1">
-                <p class="font-semibold">바느질하기</p>
-                <p class="text-on-surface-variant mt-1">이 단계에서 하는 일을 적어 주세요.</p>
+                <p class="font-semibold">태극 문양 칠하기</p>
+                <p class="text-on-surface-variant mt-1">가운데 동그라미의 <span class="text-[#cd2e3a] font-semibold">위쪽은 빨강</span>, <span class="text-[#0047a0] font-semibold">아래쪽은 파랑</span>으로 칠해요.</p>
               </div>
             </li>
             <li class="flex gap-4">
-              <span class="shrink-0 w-9 h-9 rounded-full bg-[#D9825B] text-white flex items-center justify-center font-bold">4</span>
+              <span class="shrink-0 w-9 h-9 rounded-full bg-[#79C1B5] text-white flex items-center justify-center font-bold">4</span>
+              <div class="flex-1">
+                <p class="font-semibold">건곤감리 칠하기</p>
+                <p class="text-on-surface-variant mt-1">네 모서리의 막대(괘)를 <b>검정</b>으로 칠해요. 하나씩 칠하면서 "이건 하늘, 이건 땅" 하고 이름을 불러 주면 더 오래 기억해요.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="shrink-0 w-9 h-9 rounded-full bg-[#8565B0] text-white flex items-center justify-center font-bold">5</span>
               <div class="flex-1">
                 <p class="font-semibold">완성!</p>
-                <p class="text-on-surface-variant mt-1">마무리 방법과 세탁 팁을 적어 주세요.</p>
+                <p class="text-on-surface-variant mt-1">다 칠한 태극기는 광복절에 창문이나 벽에 붙여 두어요. 아직 어린 아이라면 색을 맞추지 않고 <b>자유롭게 색칠</b>해도 충분해요.</p>
               </div>
             </li>
           </ol>
-          <div class="mt-8 bg-[#F1E8DA]/70 rounded-xl p-5">
-            <p class="pen text-[22px] text-[#4d644a] leading-none mb-2">엄마의 한 마디</p>
-            <p class="text-on-surface-variant">만들면서 헷갈렸던 부분이나 실패담을 적어 주면 좋아요.</p>
+          <div class="mt-8 bg-[#EAF5F2]/70 rounded-xl p-5">
+            <p class="pen text-[22px] text-[#2E7D6E] leading-none mb-2">엄마의 한 마디</p>
+            <p class="text-on-surface-variant">23개월 쌍둥이 남매에게는 아직 색칠하기, 그림 그리기가 전부지만 이렇게 하나씩 재미있게 알려주고 싶었어요. 어릴 때부터 제대로 알아야 커서도 우리 역사를 제대로 알 것 같아서요. 다른 아이들도 함께하면 좋겠어서 도안을 무료로 나눠요 :)</p>
           </div>
+          <p class="mt-4 text-body-sm text-on-surface-variant flex flex-wrap items-center gap-x-3 gap-y-1">
+            <span>가정·교실에서 자유롭게 써 주세요. 출처 없이 재가공하거나 무단 배포하는 것은 금지예요.</span>
+            <a href="https://blog.naver.com/ubue/223547616187" target="_blank" rel="noopener" class="inline-flex items-center gap-0.5 text-[#8565B0] font-semibold hover:underline">블로그 원문 보기<span class="material-symbols-outlined text-[16px]">open_in_new</span></a>
+          </p>
         </div>
       </div>
     </article>
@@ -148,9 +188,9 @@
 <!-- ===== 하단 (4개 페이지 공통) ===== -->
 <footer class="w-full bg-surface-container-low">
   <div class="px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl flex flex-col md:flex-row items-start md:items-center justify-between gap-space-lg">
-    <div><span class="gowun text-headline-sm text-[#4d644a] font-bold">여행둥이지</span><p class="text-body-sm text-on-surface-variant max-w-md mt-1">천천히 걷고, 손으로 짓고, 깊이 쉬어가는 시간. 아이와 엄마가 함께 자라는 따뜻한 여정을 기록합니다.</p></div>
+    <div><img src="images/logo/logo-header.png" alt="한량워킹맘" class="h-14 w-auto mb-1"/><p class="text-body-sm text-on-surface-variant max-w-md mt-1">천천히 걷고, 손으로 짓고, 깊이 쉬어가는 시간. 아이와 엄마가 함께 자라는 따뜻한 여정을 기록합니다.</p></div>
     <div class="flex flex-wrap items-center gap-space-lg text-body-sm text-on-surface-variant">
-      <a href="travel.html" class="hover:text-on-surface">아이와 여행</a><a href="craft.html" class="hover:text-on-surface">엄마표 만들기</a><a href="diary.html" class="hover:text-on-surface">쉼의 다이어리</a><span class="text-tertiary">© 2026 여행둥이지</span>
+      <a href="travel.html" class="hover:text-on-surface">아이와 여행</a><a href="craft.html" class="hover:text-on-surface">엄마표 만들기</a><a href="diary.html" class="hover:text-on-surface">쉼의 다이어리</a><span class="text-tertiary">© 2026 한량워킹맘</span>
     </div>
   </div>
 </footer>
@@ -165,8 +205,8 @@
       var img = a.querySelector('img');
       var link = document.createElement('a');
       link.href = '#' + a.id;
-      link.className = 'group block bg-surface-container-lowest rounded-xl border border-stone-200/60 overflow-hidden hover:-translate-y-1 transition-transform';
-      link.innerHTML = '<div class="relative aspect-square bg-[#F1E8DA] flex items-center justify-center overflow-hidden"><span class="material-symbols-outlined text-[32px] text-[#D9825B]/50">content_cut</span>' +
+      link.className = 'group block bg-surface-container-lowest rounded-xl border border-zinc-200/60 overflow-hidden hover:-translate-y-1 transition-transform';
+      link.innerHTML = '<div class="relative aspect-square bg-[#EAF5F2] flex items-center justify-center overflow-hidden"><span class="material-symbols-outlined text-[32px] text-[#8565B0]/50">content_cut</span>' +
         (img ? '<img src="' + img.getAttribute('src') + '" class="absolute inset-0 w-full h-full object-cover" onerror="this.remove()">' : '') +
         '</div><p class="p-3 text-body-sm font-semibold text-center"></p>';
       link.querySelector('p').textContent = a.dataset.title || '';
